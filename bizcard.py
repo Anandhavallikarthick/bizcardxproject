@@ -86,7 +86,7 @@ def upload_database(image):
     cursor.execute("SELECT ID FROM mytables WHERE Name=?", (name,))
     existing_record = cursor.fetchone()
     if existing_record:
-        print(f"Duplicate entry found for '{name}'. Not inserting.")
+        st.success(f"Duplicate entry found for '{name}'. Not inserting.")
         return False 
 
 
@@ -96,7 +96,7 @@ def upload_database(image):
         cursor.execute(image_insert, (name, designation, company_name,
                       address, phone_no, email, link, blobimg))
         conn.commit()
-        print(f"Record for '{name}' inserted successfully.")
+        st.warning(f"Record for '{name}' inserted successfully.")
         return True
 
 
