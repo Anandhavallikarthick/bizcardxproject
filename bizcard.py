@@ -134,7 +134,7 @@ st.title(':violet[Bizcardx Data Extraction🖼️]')
 
 data_extraction, database_side,update_database,delete= st.tabs(
     ['Data uploading and Viewing', 'Database side','Update or Modify','Delete'])
-file_name = 'thiru'
+file_name = 'anandhi'
 with data_extraction:
     st.markdown(
         "![Alt Text](https://cdn.dribbble.com/users/393235/screenshots/1643374/media/b32f920793005f554f22129c96627c56.gif)")
